@@ -14,7 +14,7 @@ export class ContactForm extends Component {
     number: '',
   };
 
-  nameInputId = nanoid();
+  nameInputId = nanoid();  
   numberInputId = nanoid();
 
   handleChange = e => {
@@ -40,6 +40,7 @@ export class ContactForm extends Component {
 
     this.props.onSubmit(this.state);
     this.resetForm();
+    
   };
 
   resetForm = () => {
